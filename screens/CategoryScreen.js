@@ -13,7 +13,8 @@ function renderCategoryItems(itemData) {
 
 export default function CategoryScreen() {
     return (
-        <FlatList data={CATEGORIES} keyExtractor={(item) => item.id} renderItem={renderCategoryItems} >
+        <FlatList data={CATEGORIES} keyExtractor={(item) => item.id} 
+        renderItem={renderCategoryItems}  numColumns={2} >
 
         </FlatList>
 
